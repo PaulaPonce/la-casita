@@ -1,100 +1,139 @@
-.sol{ 
- 	width: 80px; 
- 	height: 80px; 
- 	background-color: #FCFF58; 
+body{
+	margin: 0;
+	background-color: #C8EFEF;
+}
+
+.sol{
+ 	background-color: #FCFF58;
+	width: 100px; 
+ 	height: 100px; 
  	-moz-border-radius: 50px; 
  	-webkit-border-radius: 50px; 
- 	border-radius: 50px; 
- }
+ 	border-radius: 50px;
+ 	position: absolute;
+ 	top: 50px;
+ 	left: 150px;
+}
 
- .pasto{
+.pasto{
  	background-color: #00FF3C;
  	width: 100%;
- 	height: 70px;
+ 	height: 20%;
  	position: absolute;
- 	top: 400px;
- }
+ 	bottom: 0;
+}
+
+/*La Casita*/
+.casita{
+	position: relative;
+	top: 250px;
+	left: 800px;
+}
 
  /*frontis de la casita*/
 .frontis{ 
+ 	background-color: #561B0F;
  	width: 400px; 
- 	height: 200px; 
- 	background-color: #561B0F; 
+ 	height: 200px;  
  	position: absolute;
- }
+}
 
- .puerta{
+.puerta{
  	background-color: DarkGray;
  	width: 110px;
  	height: 140px;
- 	position: relative;
+ 	position: absolute;
  	top: 60px;
  	left: 70px;
- }
+}
 
-.corazon{ 
- 	position: relative; 
- 	width: 100px; height: 90px; 
- 	} 
+.corazon:before, .corazon:after{ 
+ 	position: absolute; 
+ 	content: ""; 
+ 	left: 54px;
+	top: 20px;
+	width: 35px;
+	height: 55px;
+ 	background-color: #E2725B; 
+ 	-moz-border-radius: 50px 50px 0 0; 
+ 	border-radius: 50px 50px 0 0; 
+ 	-webkit-transform: rotate(-45deg); 
+ 	-moz-transform: rotate(-45deg); 
+ 	-ms-transform: rotate(-45deg); 
+ 	-o-transform: rotate(-45deg); 
+ 	transform: rotate(-45deg); 
+ 	-webkit-transform-origin: 0 100%; 
+ 	-moz-transform-origin: 0 100%; 
+ 	-ms-transform-origin: 0 100%; 
+ 	-o-transform-origin: 0 100%; 
+ 	transform-origin: 0 100%; 
+}
 
- 	.corazon:before, .corazon:after { 
- 		position: absolute; 
- 		content: ""; 
- 		left: 53px;
-		top: 20px;
-		width: 39px;
-		height: 63px;
- 		background-color: #E2725B; 
- 		-moz-border-radius: 50px 50px 0 0; 
- 		border-radius: 50px 50px 0 0; 
- 		-webkit-transform: rotate(-45deg); 
- 		-moz-transform: rotate(-45deg); 
- 		-ms-transform: rotate(-45deg); 
- 		-o-transform: rotate(-45deg); 
- 		transform: rotate(-45deg); 
- 		-webkit-transform-origin: 0 100%; 
- 		-moz-transform-origin: 0 100%; 
- 		-ms-transform-origin: 0 100%; 
- 		-o-transform-origin: 0 100%; 
- 		transform-origin: 0 100%; 
- 		} 
- 		.corazon:after { 
- 			left: 15px; 
- 			-webkit-transform: rotate(45deg); 
- 			-moz-transform: rotate(45deg); 
- 			-ms-transform: rotate(45deg); 
- 			-o-transform: rotate(45deg); 
- 			transform: rotate(45deg); 
- 			-webkit-transform-origin: 100% 100%; 
- 			-moz-transform-origin: 100% 100%; 
- 			-ms-transform-origin: 100% 100%; 
- 			-o-transform-origin: 100% 100%; 
- 			transform-origin :100% 100%; }
+.corazon:after{ 
+ 	left: 20px; 
+ 	-webkit-transform: rotate(45deg); 
+ 	-moz-transform: rotate(45deg); 
+ 	-ms-transform: rotate(45deg); 
+ 	-o-transform: rotate(45deg); 
+ 	transform: rotate(45deg); 
+ 	-webkit-transform-origin: 100% 100%; 
+ 	-moz-transform-origin: 100% 100%; 
+ 	-ms-transform-origin: 100% 100%; 
+ 	-o-transform-origin: 100% 100%; 
+ 	transform-origin :100% 100%; 
+}
 
- .ventana{
+.ventana{
 	background-color: #EC5965;
-	width: 80px;
-	height: 80px;
-	position: relative;
+	width: 75px;
+	height: 75px;
+	position: absolute;
 	left: 250px;
-	bottom: 70px;
- }
+	bottom: 50px;
+}
 
 /*techo de la casita*/
- .techo{ 
- 	border-bottom: 120px solid black; 
- 	border-left: 70px solid transparent; 
- 	border-right: 70px solid transparent; 
- 	height: 0;
- 	width: 260px;
- }
+.techo{ 
+	border-bottom: 120px solid black; 
+	border-left: 70px solid transparent; 
+	border-right: 70px solid transparent; 
+	height: 0;
+	width: 260px;
+}
 
- .chimenea{
+.chimenea{
  	background-color: #E2725B;
  	width: 30px;
  	height: 60px;
- 	position: relative;
+ 	position: absolute;
  	top: 40px;
- 	left: 217px;
- }
+ 	left: 280px;
+}
 
+.humo{
+ 	background-color: #7B7B7B;
+ 	opacity: 0.9;
+	width: 20px; 
+ 	height: 20px; 
+ 	-moz-border-radius: 50px; 
+ 	-webkit-border-radius: 50px; 
+ 	border-radius: 50px;
+}
+
+.uno{
+	position: absolute;
+ 	top: 10px;
+ 	left: 300px;
+}
+
+.dos{
+	position: absolute;
+ 	top: -4px;
+ 	left: 330px;
+}
+
+.tres{
+	position: absolute;
+	top: -30px;
+	left: 360px;
+}
